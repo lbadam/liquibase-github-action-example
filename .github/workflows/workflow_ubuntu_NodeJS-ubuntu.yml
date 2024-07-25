@@ -37,7 +37,7 @@ jobs:
       # Runs a set of commands using the runners shell
 
       - run: |
-          curl -L https://github.com/liquibase/liquibase/releases/download/v4.28.0/liquibase-4.28.0.zip --output liquibase-4.2.0.zip
+          curl -L https://github.com/liquibase/liquibase/releases/download/v4.28.0/liquibase-4.28.0.zip --output liquibase-4.28.0.zip
           unzip -o -d liquibase liquibase-4.28.0.zip
           node --version
           node extra/NodeJS/liquibase_dev"${{ github.event.inputs.environment }}".js
