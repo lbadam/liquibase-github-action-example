@@ -14,7 +14,7 @@ jobs:
   LBJobDockerCLI:
     runs-on: ubuntu-latest
     steps: 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 # note the below assumes that a host path or volume is mounted into the container at ./Docker (or action will fail) !!!
     - name: Run 'Liquibase status' in a Docker Container	    
       uses: docker://liquibase/liquibase:latest

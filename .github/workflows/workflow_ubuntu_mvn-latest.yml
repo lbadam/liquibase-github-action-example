@@ -24,7 +24,7 @@ jobs:
     steps:
       
       - name: RunLiquibaseMavenCommands
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - run: | 
           cd extra/SalesManager_h2_version
           mvn -version
