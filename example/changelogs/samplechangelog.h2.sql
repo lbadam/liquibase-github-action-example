@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset your.name:1
+--changeset lbadam:1
 --rollback DROP TABLE person;
 create table person (
     id int primary key,
@@ -10,7 +10,7 @@ create table person (
     city varchar(30)
 )
 
---changeset your.name:2
+--changeset lbadam:2
 --rollback DROP TABLE company;
 create table company (
     id int primary key,
@@ -31,3 +31,10 @@ alter table person add column state varchar(2)
 --changeset other.dev:5
 --rollback ALTER TABLE company DROP COLUMN country;
 alter table company add column country varchar(2)
+
+--changeset lbadam:6
+--rollback DROP TABLE yourname;
+CREATE TABLE yourname (
+    id int primary key,
+    name varchar(50) not null
+)
