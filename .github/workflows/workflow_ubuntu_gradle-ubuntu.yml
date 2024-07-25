@@ -24,7 +24,7 @@ jobs:
     steps:
       
       - name: RunLiquibaseGradleCommands
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - run: | 
           cd extra/Gradle_h2
           pwd
