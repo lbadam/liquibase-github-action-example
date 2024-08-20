@@ -31,4 +31,4 @@ jobs:
         # Summary output to report update summary results. Values can be "log", "console", or "all".
         # string
         # Optional
-        showSummaryOutput: "log"
+        showSummaryOutput: "console"
