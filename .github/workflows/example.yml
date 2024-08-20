@@ -32,3 +32,5 @@ jobs:
         # string
         # Optional
         showSummaryOutput: "console"
+    - name: Adding markdown
+      run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
